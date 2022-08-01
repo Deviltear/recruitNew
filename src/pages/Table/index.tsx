@@ -94,7 +94,7 @@ const TableList: React.FC<unknown> = () => {
     {
       title: '名称',
       dataIndex: 'name',
-      tip: '名称是唯一的key值,不能重复',
+      tip: '名称是唯一的key值,不能重复a',
       formItemProps: {
         rules: [
           {
