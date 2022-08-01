@@ -32,7 +32,7 @@ const UpdateForm: React.FC<UpdateFormProps> = (props) => (
     stepsFormRender={(dom, submitter) => {
       return (
         <Modal
-          width={640}
+          width={650}
           bodyStyle={{ padding: '32px 40px 48px' }}
           destroyOnClose
           title="规则配置"
