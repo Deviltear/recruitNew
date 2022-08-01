@@ -99,7 +99,7 @@ const TableList: React.FC<unknown> = () => {
         rules: [
           {
             required: true,
-            message: '名称为必填项',
+            message: '名称为必填',
           },
         ],
       },
