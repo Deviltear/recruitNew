@@ -21,3 +21,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+# umi cache
+src/.umi-production
+src/.umi

@@ -1,4 +1,6 @@
 import services from '@/services/demo';
+import {queryUserList} from '@/services/login';
+
 import {
   ActionType,
   FooterToolbar,
@@ -12,7 +14,7 @@ import React, { useRef, useState } from 'react';
 import CreateForm from './components/CreateForm';
 import UpdateForm, { FormValueType } from './components/UpdateForm';
 
-const { addUser, queryUserList, deleteUser, modifyUser } =
+const { addUser, deleteUser, modifyUser } =
   services.UserController;
 
 /**

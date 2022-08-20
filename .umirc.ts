@@ -11,12 +11,17 @@ export default defineConfig({
   routes: [
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/login',
     },
     {
       name: '首页',
       path: '/home',
       component: './Home',
+    },
+    {
+      name: '登录页',
+      path: '/login',
+      component: './Login',
     },
     {
       name: '权限演示',
@@ -30,5 +35,12 @@ export default defineConfig({
     },
   ],
   npmClient: 'pnpm',
+  proxy: {
+    '/api': {
+      'target': 'http://localhost:8005/',
+      'changeOrigin': true,
+      'pathRewrite': { '^/api' : '' },
+    }
+  }
 });
 
