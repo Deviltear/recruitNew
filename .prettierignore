@@ -1,3 +1,11 @@
 node_modules
 .umi
 .umi-production
+.npmrc
+package-lock.json
+# Ignored suffix
+*.log
+*.md
+*.svg
+*.png
+*ignore

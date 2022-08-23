@@ -24,3 +24,7 @@ pnpm-debug.log*
 # umi cache
 src/.umi-production
 src/.umi
+/.mfsu
+!.prettierrc.js
+!.stylelintrc.js
+!.eslintrc.js

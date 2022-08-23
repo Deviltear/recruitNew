@@ -21,8 +21,8 @@ export async function queryUserList(
     ...(options || {}),
   });
 }
-/** user login */
-export async function Login(
+/** organizations login */
+export async function OrgLogin(
   params: {
     // query
     /** keyword */
@@ -35,8 +35,33 @@ export async function Login(
   return request<{
     success?: boolean;
     message?: string;
-    statusCode?: number
-  }>('/api/loginuser', {
+    StatusCode?: number
+  }>('/api/loginogz', {
+    method: 'POST',
+    data: {
+      ...params,
+    },
+    ...(options || {}),
+  });
+}
+/** organizations register */
+
+export async function OrgRegister(
+  params: {
+    // query
+    /** keyword */
+    account: string;
+    pwd: string;
+    code:string,
+    
+  },
+  options?: { [key: string]: any },
+) {
+  return request<{
+    success?: boolean;
+    message?: string;
+    StatusCode?: number
+  }>('/api/regogz', {
     method: 'POST',
     data: {
       ...params,

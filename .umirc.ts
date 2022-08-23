@@ -39,7 +39,7 @@ export default defineConfig({
     '/api': {
       'target': 'http://localhost:8005/',
       'changeOrigin': true,
-      'pathRewrite': { '^/api' : '' },
+      // 'pathRewrite': { '^/api' : '' },
     }
   }
 });
